@@ -9,43 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <!-- Шапка-->
     <header class="page-header">
-        <nav class="nav">
-           <a href="/index.html" class="logo">
-           <span class="web">Web</span>Studio</a>
-        
-           <ul class="site-nav list">
-               <li class="item"> <a href="" class="site-nav-link current ">Студия</a> </li>
-               <li class="item"> <a href="./portfolio.html" class="site-nav-link">Портфолио</a> </li>
-            <li class="item"> <a href="" class="site-nav-link">Контакты</a> </li>
-           </ul>
-        
-           <ul class="auth-nav list">
-            <li class="item"> <a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a> </li>
-            <li class="item"> <a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a> </li>
-          </ul>
-        </nav>
-    
+        <div class="container main-nav">
+            <nav class="nav">
+                <a href="/index.html" class="logo">
+                    <span class="web">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="item"> <a href="./index.html" class="site-nav-link current">Студия</a> </li>
+                    <li class="item"> <a href="./portfolio.html" class="site-nav-link">Портфолио</a> </li>
+                    <li class="item"> <a href="" class="site-nav-link">Контакты</a> </li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
+                <li class="item"> <a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a> </li>
+                <li class="item"> <a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a> </li>
+            </ul>
+        </div>
     </header>
  
         <main>
     <!--Банер-->
-        <section class="hero">
-        <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" name="заказать услугу" class="button">Заказать услугу</button>
-             
+        <section class="hero-backgraund">
+        <div class="container hero">
+          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br/> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <button type="button" name="заказать услугу" class="button">Заказать услугу</button>
+        </div> 
     </section>
        
 
     <!--Преимущества-->
-    <section class="section" >
-        <div class="container">
-        <h2 class="section-title hide" >Наши преимущества</h2>
+    <section>
+        <div class="section container ">
+        <h2 class="visually-hidden">Наши преимущества</h2>
          <ul class="feature-list list">
             <li class="item"> <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ </h3>
                  <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -64,7 +64,7 @@
     </section>
     
     <!--Чем мы занимаемся-->
-    <section class="section">
+    <section class="section second">
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
            <ul class="units list">
@@ -76,29 +76,29 @@
     </section>
 
     <!--Наша команда-->
-    <section>
+    <section class="section group">
        <div class="container group">
-       <h2 class="section-title ">Наша команда</h2>
+       <h2 class="section-title">Наша команда</h2>
             <ul class="team list">
-                <li class="item"><img src="./images/img1.jpg" alt="фото игорь демьяненко" width="270"><h3 class="team-title">Игорь Демьяненко</h3><p class="text">Product Designer</p></li>
-                <li class="item"><img src="./images/img2.jpg" alt="фото ольга репина" width="270"><h3 class="team-title"> Ольга Репина</h3><p class="text">Frontend Developer</p></li>
-                <li class="item"><img src="./images/img3.jpg" alt="фото николай тарасов" width="270"><h3 class="team-title">Николай Тарасов</h3><p class="text">Marketing</p></li>
-                <li class="item"><img src="./images/img4.jpg" alt="фото михаил ермаков" width="270"><h3 class="team-title">Михаил Ермаков</h3> <p class="text">UI Designer</p></li>
+                <li class="item"><img src="./images/img1.jpg" alt="фото игорь демьяненко" width="270"><h3 class="team-title">Игорь Демьяненко</h3><p class="text-team">Product Designer</p></li>
+                <li class="item"><img src="./images/img2.jpg" alt="фото ольга репина" width="270"><h3 class="team-title"> Ольга Репина</h3><p class="text-team">Frontend Developer</p></li>
+                <li class="item"><img src="./images/img3.jpg" alt="фото николай тарасов" width="270"><h3 class="team-title">Николай Тарасов</h3><p class="text-team">Marketing</p></li>
+                <li class="item"><img src="./images/img4.jpg" alt="фото михаил ермаков" width="270"><h3 class="team-title">Михаил Ермаков</h3> <p class="text-team">UI Designer</p></li>
                 
             </ul>
         </div>
     </section>
     </main>
     <!--Футер-->
-    <footer>
-        <div class="container last">
-        <a href="/index.html" class="logo">
+    <footer class="last">
+        <div class="container ">
+        <a href="/index.html" class="logo footer">
         <span class="web">Web</span>Studio</a>
         <address>
             <ul class="footer list">
-            <li><a href="https://goo.gl/maps/i7YYpfPSyJy5PhJe8" class="adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="mailto:info@devstudio.com" class="auth">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="auth">+38 096 111 11 11</a></li>
+            <li class="item"><a href="https://goo.gl/maps/i7YYpfPSyJy5PhJe8" class="adress">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="auth">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="auth">+38 096 111 11 11</a></li>
             </ul>
         </address>
         </div>
