@@ -151,21 +151,16 @@ ul {
 }
 
 /* hero */
-.hero-backgraund {
-  background-color: #2f303a;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .hero {
-  width: 1200px;
+  background-color: #2f303a;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
 }
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -204,8 +199,6 @@ ul {
 }
 
 .feature-list .title {
-  width: 260px;
-
   color: var(--title-text-color);
 
   font-size: 14px;
@@ -213,13 +206,6 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-
-/* .feature-list .text {
-  margin-top: 10;
-  margin-bottom: 0;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-} */
 
 .list .text {
   margin-top: 10px;
@@ -261,17 +247,13 @@ img {
 
 .team .item {
   background-color: var(--primary-wight-color);
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .team .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .team-title {
-  margin-top: 30px;
   color: var(--title-text-color);
 
   font-size: 16px;
@@ -287,12 +269,13 @@ img {
   line-height: 1.18;
   text-align: center;
 }
+.worker {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .group {
   background-color: var(--background-second);
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* button */
@@ -359,25 +342,21 @@ img {
 
 /* footer */
 .last {
-  padding: 60px 15px;
+  padding: 60px;
   background-color: #2f303a;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer {
   color: var(--secondary-botton-color);
 }
 
-.footer {
-  margin-top: 20px;
-}
-
 .footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
+address {
+  margin-top: 20px;
+}
 .footer .adress {
   background-color: #2f303a;
   color: var(--primary-wight-color);
@@ -395,16 +374,16 @@ img {
 }
 
 /* Фильтр портфолио */
-.fil {
+.filter {
   display: flex;
   justify-content: center;
 }
 
-.fil .item {
+.filter-item {
   margin-right: 8px;
   margin-bottom: 34px;
 }
-.fil .item:last-child {
+.filter-item:last-child {
   margin-right: 0;
 }
 
@@ -433,14 +412,24 @@ img {
   margin-bottom: 0;
 }
 
-.item .title {
+.card .title {
   margin-top: 0px;
   margin-bottom: 0;
+
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.item .sector {
+.card .sector {
+  margin-top: 4px;
+
   font-size: 16px;
   font-weight: 400;
-  margin-top: 4px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 .card {
